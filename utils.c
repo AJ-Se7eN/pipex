@@ -1,5 +1,12 @@
 #include "pipex.h"
 
+/* Showing error */
+int	ft_error(char *error)
+{
+	ft_putendl_fd(error, 2);
+	return (1);
+}
+
 /* Cleaning 2d array */
 void	ft_clear_2d(char **array)
 {

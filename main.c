@@ -1,11 +1,5 @@
 #include "pipex.h"
 
-int	ft_error(char *error)
-{
-	ft_putendl_fd(error, 2);
-	return (1);
-}
-
 void	ft_child_handler(int *pipe_fd, char *cmd, char **env, int *fd)
 {
 	close(pipe_fd[0]);
